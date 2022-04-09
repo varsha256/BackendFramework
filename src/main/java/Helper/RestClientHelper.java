@@ -22,7 +22,7 @@ public class RestClientHelper extends BaseTest {
         return reqSpec.get();
     }
     public Response postRequest(){
-        return reqSpec.get();
+        return reqSpec.post();
     }
 
 }
