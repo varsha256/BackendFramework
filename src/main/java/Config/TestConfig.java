@@ -1,6 +1,7 @@
 package Config;
 
 import Builder.RequestBuilder;
+import Helper.ResponseComparision;
 import Helper.ResponseHelper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -14,6 +15,11 @@ public class TestConfig {
     @Bean
     public RequestBuilder requestBuilder(){
         return new RequestBuilder();
+    }
+
+    @Bean
+    public ResponseComparision responseComparision(){
+       return new ResponseComparision();
     }
 
     @Bean
